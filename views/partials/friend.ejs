@@ -1,0 +1,17 @@
+<div class="friends-container">
+  <% currentUser.friends.forEach(friend => { %>
+  <% users.forEach((user, index) => { %>
+  <% if (user.id === friend) { %>
+  <div class="img-box">
+    <a href="http://localhost:8000/user/<%= friend%>">
+      <img class="avatar" src="<%= user.avatarUrl%>">
+    </a>
+    <br />
+    <form action="/user/remove" method="POST">
+      <button class="btn-remove" name="id" value="<%= user.id %> ">Remove <%= user.name %> </button>
+    </form>
+  </div>
+  <% }  %>
+  <% }) %>
+  <% }) %>
+</div> 

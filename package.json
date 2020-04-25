@@ -12,9 +12,11 @@
     "author": "Scott Morin <scott@journeyedu.co>",
     "license": "MIT",
     "dependencies": {
+        "body-parser": "^1.19.0",
         "concurrently": "^5.1.0",
         "ejs": "^3.0.1",
         "express": "^4.17.1",
+        "method-override": "^3.0.0",
         "morgan": "^1.9.1",
         "node-sass": "^4.13.1",
         "nodemon": "^2.0.2"

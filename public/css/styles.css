@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -83,11 +83,99 @@ codeblock {
   margin: 12px 32px 6px 0;
   padding: 12px 14px; }
 
+.navbar {
+  height: 100px;
+  background-color: #015f01; }
+  .navbar .site-title {
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold; }
+
+.container > form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  height: 250px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 1px #ddd; }
+
+.container .form input[type=text] {
+  padding: 10px;
+  margin-top: 20px;
+  width: 80%; }
+
+.container form input[type=submit] {
+  padding: 10px;
+  margin-top: 20px;
+  width: 100px;
+  background-color: #015f01;
+  color: #fff;
+  border: none;
+  cursor: pointer; }
+
+.container .img-profile-box {
+  text-align: center;
+  margin: auto; }
+  .container .img-profile-box img {
+    height: 200px; }
+
+.container .img-box {
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 1px #ddd;
+  padding: 40px;
+  text-align: center; }
+
+.friends-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  text-align: center;
+  justify-content: center; }
+  .friends-container img {
+    border-radius: 50%;
+    height: 100px;
+    margin: 20px 20px 0px 20px; }
+
+a {
+  text-decoration: none; }
+  a p {
+    color: #000; }
+
+.not-friend {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.btn-add {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #015f01;
+  background-color: #fff;
+  color: #015f01;
+  cursor: pointer; }
+  .btn-add:hover {
+    background-color: #015f01;
+    color: #fff; }
+
+.btn-remove {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid red;
+  background-color: #fff;
+  color: red;
+  cursor: pointer; }
+  .btn-remove:hover {
+    background-color: red;
+    color: #fff; }
+
 body {
   background: #fafafa;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-family: Poppins, sans-serif; }
 
 .main {
   flex: 1 0 auto; }
@@ -117,6 +205,14 @@ body {
   border: 1px solid #cacaca;
   margin: 12px 32px 6px 0;
   padding: 12px 14px; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 100px; }
 
 @media screen and (min-width: 900px) {
   .content {
