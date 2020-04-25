@@ -1,0 +1,18 @@
+<div class="not-friend">
+  <h1 style="text-align: center;">Not in friends list</h1>
+  <div class="friends-container">
+    <% users.map(user => { %>
+    <% if (!currentUser.friends.includes(user.id) && currentUser !== user) { %>
+    <div class="img-box">
+      <a href="http://localhost:8000/user/<%= user.id%>">
+        <img class="avatar" src="<%= user.avatarUrl%>">
+      </a>
+      <br>
+      <form action="/user/add" method="POST">
+        <button class="btn-add" name="id" value="<%= user.id %>">Add <%= user.name %> </button>
+      </form>
+    </div>
+    <% } %>
+    <% }) %>
+  </div>
+</div> 

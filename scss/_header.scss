@@ -1,0 +1,14 @@
+$primary-color:#015f01;
+
+.navbar {
+  height: 100px;
+  background-color: $primary-color;
+
+  .site-title {
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+}
